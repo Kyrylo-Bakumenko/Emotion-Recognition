@@ -43,7 +43,7 @@ michael.lyons@gmail.com"
 By taking the averaged semantic ratings we can see a distribution across the six main categories of emtions. If maximum value will be marked as the correct answer when asked 'What emotion is this?' However, by acknolwedging that an expression can be calssified into multiple categories, we can normalize the outputs and interpreet them as the correct output vector. This will allow for loss propogation methods such as Mean Sqaured Error to be more effectively deployed since there is more than one output channel to be considered, the output vector now has a size from zero to six non-negligible outputs affecting the loss function.
 
 ## The Model
-The models for this task ranged custom convultion NN's to more complex pre-made NN's such as AlexNet. I chose several candidate NN architectures from those that performed best ImageNet and could be easily loaded by PyTorch to be customized. I decided to customize the ResNet152 NN for my task and it reached an out-of-sample accuracy of 98.4% when tasked with identifying the dominant emotion. The "Adam" optimizer was used to achieve this result. A snapshot of the weights of the model were saved in after each epoch so regardless if the model became overfit, the state of best performance could be recovered. Instead it became the goal to train until an overfit occured as this would signal that all the necessary epochs and more have already passed and we can be confident that the saved state is the best for this NN.
+The models for this task ranged custom convultion NN's to more complex pre-made NN's such as AlexNet. I chose several candidate NN architectures from those that performed best ImageNet and could be easily loaded by PyTorch to be customized. I decided to customize the ResNet152 NN for my task and it reached an out-of-sample accuracy of 98.4% when tasked with identifying the dominant emotion. The "Adam" optimizer, a batch size of 16 over the course of 30 epochs was used to achieve this result. A snapshot of the weights of the model were saved in after each epoch so regardless if the model became overfit, the state of best performance could be recovered. Instead it became the goal to train until an overfit occured as this would signal that all the necessary epochs and more have already passed and we can be confident that the saved state is the best for this NN.
 
 ### Training
 The JAFFED Database is relatively small which becomes an even greater challenge when the dataset needed to be partitoioned into seperate traigning and evaluation subsets. Furthermore, because there are only Japenese female models for the images, the accuracy of the model on faces with non-common features in Japan is questionable.
@@ -68,7 +68,16 @@ Accuracy initially plummeted but then rose to an appreciable amount in a dozen e
 I have already attempted to export this model through PyTorche's trace methods into 'traced script module' of ResNet18 to export this project to mobile.
 As my first mobile app project, I am currently working with making the Android's camera output bitmap agreeable with the data fed into the model to turn this projetc into an app in the future.
 
-## Citation
+I also hope to augment this with the FACES dataset which is also registration free like JAFFED.
+
+## Acknolwdgements
+Huge thanks to Michael J. Lyons, Shigeru Akamatsu, Miyuki Kamachi, and Jiro Gyoba for making this database open source! 20 years later, without this database this project would not have been possible. This was my first AI project which I started in my Junior year of high school, so I scoured every databse in 
+
+https://en.wikipedia.org/wiki/List_of_facial_expression_databases
+
+However after filling out forms for these universities and instutions I never recieved any response.
+
+### Citations
 Michael J. Lyons, Shigeru Akamatsu, Miyuki Kamachi, Jiro Gyoba.
 Coding Facial Expressions with Gabor Wavelets, 3rd IEEE International Conference on Automatic Face and Gesture Recognition, pp. 200-205 (1998).
 http://doi.org/10.1109/AFGR.1998.670949
