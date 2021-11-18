@@ -68,7 +68,7 @@ Accuracy initially plummeted but then rose to an appreciable amount in a dozen e
 I have already attempted to export this model through PyTorche's trace methods into 'traced script module' of ResNet18 to export this project to mobile.
 As my first mobile app project, I am currently working with making the Android's camera output bitmap agreeable with the data fed into the model to turn this projetc into an app in the future.
 
-I also hope to augment this with the FACES dataset which is also registration free like JAFFED.
+I also hope to augment this with the FACES dataset and over registration free databases.
 
 ## Acknolwdgements
 Huge thanks to Michael J. Lyons, Shigeru Akamatsu, Miyuki Kamachi, and Jiro Gyoba for making this database open source! 20 years later, without this database this project would not have been possible. This was my first AI project which I started in my Junior year of high school, so I scoured every databse in 
