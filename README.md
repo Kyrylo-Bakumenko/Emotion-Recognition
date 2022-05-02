@@ -38,7 +38,7 @@ Kyoto, Japan
 michael.lyons@gmail.com"
 
   
-### Our Approach
+### My Approach
 
 By taking the averaged semantic ratings we can see a distribution across the six main categories of emtions. If maximum value will be marked as the correct answer when asked 'What emotion is this?' However, by acknolwedging that an expression can be calssified into multiple categories, we can normalize the outputs and interpreet them as the correct output vector. This will allow for loss propogation methods such as Mean Sqaured Error to be more effectively deployed since there is more than one output channel to be considered, the output vector now has a size from zero to six non-negligible outputs affecting the loss function.
 
