@@ -71,9 +71,7 @@ As my first mobile app project, I am currently working with making the Android's
 I also hope to augment this with the FACES dataset and over registration free databases.
 
 ## Acknolwdgements
-Huge thanks to Michael J. Lyons, Shigeru Akamatsu, Miyuki Kamachi, and Jiro Gyoba for making this database open source! 20 years later, without this database this project would not have been possible. This was my first AI project which I started in my Junior year of high school, I [scoured databses](https://en.wikipedia.org/wiki/List_of_facial_expression_databases). 
-
-However after filling out forms for these universities and instutions I never recieved any response.
+Huge thanks to Michael J. Lyons, Shigeru Akamatsu, Miyuki Kamachi, and Jiro Gyoba for making this database open source! 20 years later, without this database this project would not have been possible. This was my first AI project which I started in my Junior year of high school, I out of all the [easily found databases](https://en.wikipedia.org/wiki/List_of_facial_expression_databases), the only one which I got access to was JAFFE. 
 
 ### Citations
 Michael J. Lyons, Shigeru Akamatsu, Miyuki Kamachi, Jiro Gyoba.
